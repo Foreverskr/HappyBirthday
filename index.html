@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="button" onclick="openPopup()">🥰CLICK ME🥰</button>
+
+        <div class="popup" id="popup">
+            <h1>HAPPY BIRTHDAY MY LOVE!!</h1>
+            <img src="animated-birthday-cake-with-three-lit-candles-suitable-for-birthday-greetings-or-celebration-themed-designs-festive-indulgent-sweet-celebratory-video-removebg.png" alt="">
+            
+            <p>
+                Hello My Love! TODAY IS YOUR BIRTHDAY!!<br>
+                Thank you for being there throughout my life.<br>
+                You’re my best friend, my world, my pretty pretty bebe.<br>
+                For now ito lang muna but i promise makakabawi din ako sayo soon <br>
+                I love you so much always! I’m always here to support and help you.<br>
+                I LOVE YOU SO MUCH MY LOVE! Happy, happy birthday! 🎉❤️
+            </p>
+            <button type="submit" class="button" onclick="openPopup()">🥰CLICK FOR MORE🥰</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+        // Create an instance of JSConfetti
+        const jsConfetti = new JSConfetti();
+
+        // Add an event listener to the button
+        document.querySelectorAll('.button').forEach(button => {
+        button.addEventListener('click', () => {
+        jsConfetti.addConfetti();
+        jsConfetti.addConfetti({
+            emojis: ['🎂', '🎉',"iloveyou"],
+        });
+    });
+});
+    </script>
+</body>
+</html>

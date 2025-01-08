@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confetti Example</title>
+</head>
+<body>
+    <button class="button">Click me</button>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+        // Create an instance of JSConfetti
+        const jsConfetti = new JSConfetti();
+
+        // Add an event listener to the button
+        document.getElementsByClassName('button')[0].addEventListener("click", () => {
+            // Trigger the confetti
+            jsConfetti.addConfetti();
+        });
+    </script>
+</body>
+</html>
